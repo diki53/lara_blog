@@ -16,23 +16,28 @@ class CategoryBlogSeeder extends Seeder
         // CategoryBlog::factory(3)->create();
         CategoryBlog::create([
             'name' => 'Web Design',
-            'slug' => 'web-design'
+            'slug' => 'web-design',
+            'color' => 'red'
         ]);
         CategoryBlog::create([
             'name' => 'Web Development',
-            'slug' => 'web-development'
+            'slug' => 'web-development',
+            'color' => 'green'
         ]);
         CategoryBlog::create([
             'name' => 'UI UX',
-            'slug' => 'ui-ux'
+            'slug' => 'ui-ux',
+            'color' => 'yellow'
         ]);
         CategoryBlog::create([
             'name' => 'Machine Learning',
-            'slug' => 'machine-learning'
+            'slug' => 'machine-learning',
+            'color' => 'blue'
         ]);
         CategoryBlog::create([
             'name' => 'Data Structure',
-            'slug' => 'data-structure'
+            'slug' => 'data-structure',
+            'color' => 'purple'
         ]);
     }
 }
