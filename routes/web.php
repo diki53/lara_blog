@@ -21,7 +21,7 @@ Route::get('/posts', function () {
     // }
 
     // $posts = Post::latest()->get();
-    return view('posts', ['title' => 'Halaman Blog', 'posts' => Post::filter(request(['search','category','author']))->latest()->get()]);
+    return view('posts', ['title' => 'Halaman Blog', 'posts' => Post::filter(request(['search','category','author']))->latest()->paginate(6)->withQueryString()]);
 });
 Route::get('/posts/{post:slug}', function (Post $post) {
     // $post = Post::find($post);
